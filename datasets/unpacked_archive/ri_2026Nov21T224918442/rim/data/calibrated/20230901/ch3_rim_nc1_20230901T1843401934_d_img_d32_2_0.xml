@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-model href="https://isda.issdc.gov.in/pds4/isda/v1/ch2_ldd_ISDA_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron" ?><Product_Ancillary xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:disp="http://pds.nasa.gov/pds4/disp/v1" xmlns:isda="https://isda.issdc.gov.in/pds4/isda/v1" xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:sp="http://pds.nasa.gov/pds4/sp/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd                  http://pds.nasa.gov/pds4/disp/v1 http://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1301.xsd                 http://pds.nasa.gov/pds4/sp/v1 http://pds.nasa.gov/pds4/sp/v1/PDS4_SP_1100.xsd           https://isda.issdc.gov.in/pds4/isda/v1 https://isda.issdc.gov.in/pds4/isda/v1/ch3_ldd_ISDA_1000.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:isro:isda:ch3_chr.rim:data_calibrated:ch3_rim_nc1_20230901t1843401934_d_img_d32_2_0</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Chandrayaan-3 Rover Imager</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Ancillary</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2024-06-11</modification_date>
+                <version_id>1.0</version_id>
+                <description>PDS4 product label created by SAC DP Team</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time>2023-09-01T18:43:40.1934Z</start_date_time>
+            <stop_date_time>2023-09-01T18:43:40.2395Z</stop_date_time>
+        </Time_Coordinates>
+        <Primary_Result_Summary>
+            <purpose>Navigation</purpose>
+	    <processing_level>Calibrated</processing_level>
+            <description>Processing data</description>
+	</Primary_Result_Summary>
+        <Investigation_Area>
+            <name>Chandrayaan-3</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lidvid_reference>urn:isro:isda:context:investigation:mission.chandrayaan3::1.0</lidvid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <Observing_System_Component>
+                <name>Chandrayaan-3 Rover Module</name>
+                <type>Spacecraft</type>
+                <description>
+                    Chandrayaan-3 Rover Module is a rover craft consists of various scientific instruments.
+                </description>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Rover Imager</name>
+                <type>Instrument</type>
+                <description>
+                    Rover Imager (RI) is one of the imaging camera hosted on the Chandrayaan-3 Rover Module.
+                </description>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Moon</name>
+            <type>Satellite</type>
+            <description>Moon is a natural satellite of Earth</description>
+        </Target_Identification>
+        <Mission_Area>
+            <isda:Product_Parameters>
+                <isda:job_id>RIMXXD32C3R0018000NNNN23244193930009_V1_1</isda:job_id>
+                <isda:mode>Mode-2</isda:mode>
+                <isda:frame_number>0</isda:frame_number>
+                <isda:imager_id>RI1</isda:imager_id>
+            </isda:Product_Parameters>
+        </Mission_Area>
+    </Context_Area>
+    <File_Area_Ancillary>
+        <File>
+            <file_name>ch3_rim_nc1_20230901T1843401934_d_img_d32_2_0.jpg</file_name>
+            <creation_date_time>2024-06-12T14:39:24</creation_date_time>
+            <file_size unit="byte">754361</file_size>
+            <md5_checksum>45a618c4ca2d981053475d80605d8617</md5_checksum>
+            <comment>
+                This File contains the count calibrated image in jpg format. 
+                md5_checksum is provided for ensuring data integrity when users are downloading the data.
+            </comment>
+        </File>
+        <Encoded_Image>
+		<name>ch3_rim_nc1_20230901T1843401934_d_img_d32_2_0</name>
+		<offset unit="byte">0</offset>
+		<encoding_standard_id>JPEG</encoding_standard_id>
+	</Encoded_Image>
+    </File_Area_Ancillary>
+</Product_Ancillary>

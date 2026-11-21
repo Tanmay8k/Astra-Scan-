@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:disp="http://pds.nasa.gov/pds4/disp/v1" xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:sp="http://pds.nasa.gov/pds4/sp/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd       http://pds.nasa.gov/pds4/disp/v1 http://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1301.xsd      http://pds.nasa.gov/pds4/sp/v1 http://pds.nasa.gov/pds4/sp/v1/PDS4_SP_1100.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:isro:isda:ch3_chl.cht:data_raw</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Chandrayaan-3 Lander ChaSTE raw science image data products collection</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Collection</product_class>
+	<Citation_Information>
+            <author_list>Chandrayaan-3 ChaSTE DP Team</author_list>
+            <editor_list>Chandrayaan-3 ChaSTE DP Team</editor_list>
+            <publication_year>2024</publication_year>
+            <description>collection of document products.</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2024-02-26</modification_date>
+		<version_id>1.0</version_id>
+                <description>PDS4 label created by ChaSTE DP Team</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+   	<Context_Area>
+		<Time_Coordinates>
+                	<start_date_time>2023-08-23Z</start_date_time>
+                        <stop_date_time>2023-09-02Z</stop_date_time>
+        	</Time_Coordinates>
+        	<Primary_Result_Summary>
+            		<purpose>Science</purpose>
+            		<processing_level>Raw</processing_level>
+        	</Primary_Result_Summary>
+        	<Investigation_Area>
+            		<name>chandrayaan-3</name>
+            		<type>Mission</type>
+            		<Internal_Reference>
+                		<lidvid_reference>urn:isro:isda:context:investigation:mission.chandrayaan3::1.0</lidvid_reference>
+                		<reference_type>collection_to_investigation</reference_type>
+            		</Internal_Reference>
+        	</Investigation_Area>
+        	<Observing_System>
+            		<Observing_System_Component>
+                		<name>Chandrayaan-3 Lander Module</name>
+                		<type>Spacecraft</type>
+                		<description>
+                    		Chandrayaan-3 Lander Module consists of various scientific instruments. 	
+                		</description>
+            		</Observing_System_Component>
+            		<Observing_System_Component>
+                                <name>ChaSTE</name>
+                		<type>Instrument</type>
+                                <description>
+                                     The Chandrayaan-3 lunar mission affords a unique opportunity to explore the Lunar regolith temperature from the lunar lander platform. The ChaSTE (Chandra's Surface Thermophysical Experiment) is developed indigenously for probing the Lunar regolith thermophysical properties from the lunar lander.
+                                </description>
+            		</Observing_System_Component>
+        	</Observing_System>
+        	<Target_Identification>
+            		<name>Moon</name>
+            		<type>Satellite</type>
+            		<description>Moon is a natural satellite of Earth</description>
+        	</Target_Identification>
+    	</Context_Area>
+ 	<Collection>
+        	<collection_type>Data</collection_type>
+    	</Collection>
+    <File_Area_Inventory>
+        <File>
+            <file_name>collection_data_raw_inventory.csv</file_name>
+            <local_identifier>collection_data_raw_inventory.csv</local_identifier>
+            <creation_date_time>2024-02-26</creation_date_time>
+            <file_size unit="byte">1596</file_size>
+            <records>1</records>
+            <md5_checksum>e2b519f93ca82bb3d540f602203fc97f</md5_checksum>
+        </File>
+        <Inventory>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>7</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>2</fields>
+                <groups>0</groups>
+                <maximum_record_length unit="byte">100</maximum_record_length>
+                <Field_Delimited>
+                    <name>Member Status</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <maximum_field_length unit="byte">1</maximum_field_length>
+                    <description>This column specifies the member status</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LIDVID_LID</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_LIDVID_LID</data_type>
+                    <maximum_field_length unit="byte">255</maximum_field_length>
+                    <description>This column specifies the LIDVID of the files that comprise the collection.</description>
+                </Field_Delimited>
+            </Record_Delimited>
+	    <reference_type>inventory_has_member_product</reference_type>
+        </Inventory>
+    </File_Area_Inventory>
+</Product_Collection>

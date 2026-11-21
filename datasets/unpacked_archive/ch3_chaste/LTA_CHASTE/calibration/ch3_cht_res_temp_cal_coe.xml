@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-model href="https://isda.issdc.gov.in/pds4/isda/v1/ch2_ldd_ISDA_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron" ?><Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:disp="http://pds.nasa.gov/pds4/disp/v1" xmlns:isda="https://pds.nasa.gov/pds4/isda/v1" xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:sp="http://pds.nasa.gov/pds4/sp/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd                  http://pds.nasa.gov/pds4/disp/v1 http://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1301.xsd                 http://pds.nasa.gov/pds4/sp/v1 http://pds.nasa.gov/pds4/sp/v1/PDS4_SP_1100.xsd           https://isda.issdc.gov.in/pds4/isda/v1 https://isda.issdc.gov.in/pds4/isda/v1/ch3_ldd_ISDA_1000.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:isro:isda:ch3_chl.cht:data_cal</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Chandrayaan-3 Lander payload ChaSTE</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Observational</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2024-03-20</modification_date>
+                <version_id>1.0</version_id>
+                <description>PDS4 product label created by ChaSTE Team</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+  <Observation_Area>
+       
+        <Primary_Result_Summary>
+               <purpose>Science</purpose>
+               <processing_level>Cal</processing_level>
+        <Science_Facets>
+               <domain>Surface</domain>
+               <discipline_name>Small Bodies</discipline_name>
+        <facet1>Physical Properties</facet1>
+        </Science_Facets>
+        </Primary_Result_Summary>
+    <Investigation_Area>
+        <name>Chandrayaan-3</name>
+        <type>Mission</type>
+        <Internal_Reference>
+        <lidvid_reference>urn:isro:isda:context:investigation:mission.Chandrayaan3::1.0</lidvid_reference>
+        <reference_type>cal_investigation</reference_type>
+        </Internal_Reference>
+    </Investigation_Area>
+
+    <Observing_System>
+      <name>ch3</name>
+      <Observing_System_Component>
+        <name>Chandrayaan-3 Lander</name>
+        <type>Spacecraft</type>
+        <description>Chandrayaan-3 -Lander craft consists of various scientific instruments.</description>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>ChaSTE</name>
+                <type>Instrument</type>
+		<description>The Chandrayaan-3 lunar mission affords a unique opportunity to explore the Lunar regolith temperature from the lunar lander platform. The ChaSTE (Chandra's Surface Thermophysical Experiment) is developed indigenously for probing the Lunar regolith thermophysical properties from the lunar lander.</description>
+
+       <Internal_Reference>
+          <lidvid_reference>urn:isro:isda:context:instrument:cht::1.0</lidvid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+        </Observing_System_Component>
+        </Observing_System>
+
+        <Target_Identification>
+            <name>Moon</name>
+            <type>Satellite</type><description>Moon is a natural satellite of Earth.</description>
+        </Target_Identification>
+        
+    </Observation_Area>
+
+    <File_Area_Observational>
+        <File>
+           <file_name>ch3_cht_res_temp_cal_coe.csv</file_name>
+           <local_identifier>STREAM_DELIMITED_CSV_FILE_ID</local_identifier>
+           <creation_date_time>2024-03-20T13:41:13Z</creation_date_time>
+           <file_size unit="byte">740</file_size>
+           <records>10</records>
+           <md5_checksum>ae0eab4e5896196718f09804388435b8</md5_checksum>
+
+        </File>
+       <Table_Character>
+            <name>Calibration coefficient R0 of ChaSTE</name>
+            <local_identifier>Table</local_identifier>
+            <offset unit="byte">0</offset>
+       	   <records>10</records>
+            <description>This table contains Calibration constants R0, A, B and C to convert Resistance to temperature</description>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <Record_Character>
+                <fields>4</fields>
+                <groups>0</groups>
+                <record_length unit="byte">74</record_length>
+                <Field_Character>
+                    <name>R0</name>
+                    <field_location unit="byte">4</field_location>
+                    <data_type>ASCII_Double</data_type>
+                    <field_length unit="byte">14</field_length>
+                    <field_format>%14.10f</field_format>
+		    <unit>OHM</unit>
+		    <description>Cal_coe_R0</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>A</name>
+                    <field_location unit="byte">22</field_location>
+                    <data_type>ASCII_Double</data_type>
+                    <field_length unit="byte">14</field_length>
+                    <field_format>%14.12f</field_format>
+		    <unit>OHM</unit>
+		    <description>Cal_coe_A</description>
+                </Field_Character>
+                 <Field_Character>
+                    <name>B</name>
+                    <field_location unit="byte">39</field_location>
+                    <data_type>ASCII_Double</data_type>
+                    <field_length unit="byte">15</field_length>
+                    <field_format>%15.11f</field_format>
+		    <unit>OHM</unit>
+		    <description>Cal_coe_B</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>C</name>
+                    <field_location unit="byte">57</field_location>
+                    <data_type>ASCII_Double</data_type>
+                    <field_length unit="byte">15</field_length>
+                    <field_format>%15.12f</field_format>
+		    <unit>OHM</unit>
+		    <description>Cal_coe_C</description>
+                </Field_Character>
+            </Record_Character>     
+        </Table_Character>
+    </File_Area_Observational>
+</Product_Observational>
